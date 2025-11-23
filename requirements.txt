@@ -1,0 +1,11 @@
+ultralytics>=8.0
+torch>=2.0
+onnx>=1.12
+onnxruntime>=1.15
+opencv-python
+numpy
+Pillow
+streamlit
+
+# Optional: quantization helper package (depends on ORT build)
+# onnxruntime-tools

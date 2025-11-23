@@ -1,0 +1,29 @@
+# Ignore Python virtual environment
+edgevision-venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model weights (large files)
+*.pt
+*.onnx
+
+# System + IDE files
+.DS_Store
+Thumbs.db
+
+# Streamlit cache and logs
+.streamlit/
+logs/
+
+# Images and output files (optional — remove if you want to upload them)
+*.jpg
+*.jpeg
+*.png
+
+# Dataset folders (optional)
+dataset/
+datasets/
