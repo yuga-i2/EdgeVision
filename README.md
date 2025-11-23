@@ -20,40 +20,4 @@ edgevision/
 └── requirements.txt
 ```
 
-Quick start
 
-1. Create a venv and install dependencies:
-
-```powershell
-python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
-```
-
-2. Place `yolov8n.pt` in `models/` (or edit the paths in the scripts).
-
-3. Export to ONNX:
-
-```powershell
-python src/export_onnx.py --weights models/yolov8n.pt --output models/yolov8n.onnx
-```
-
-4. (Optional) Quantize:
-
-```powershell
-python src/quantize_onnx.py --input models/yolov8n.onnx --output models/yolov8n_quant.onnx
-```
-
-5. Run a quick OpenCV demo on an image or webcam:
-
-```powershell
-python src/run_opencv.py --model models/yolov8n.onnx --source tests/data/sample.jpg
-```
-
-6. Run the Streamlit demo:
-
-```powershell
-streamlit run src/run_streamlit.py
-```
-
-Notes
-- These scripts try to use the Ultralytics `YOLO` class when available for convenience; otherwise they fall back to basic ONNX runtime usage where possible.
-- They are intended as small, maintainable examples — adapt them for production.
